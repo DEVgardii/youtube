@@ -18,7 +18,7 @@ class Cli:
     def start(self):
         parser = argparse.ArgumentParser(description="Youtube telegram downloader", epilog=f"Uses environment variable <{self.bot_key_env_name}> for the Telegram bot key if no arguments passed")
         mutually_exclusive_group = parser.add_mutually_exclusive_group()
-        mutually_exclusive_group.add_argument("-k", "--use_key", dest="use_key", metavar="<key>", type=str, help="Telegram bot and YouTube api key")
+        mutually_exclusive_group.add_argument("-k", "--use_key", dest="use_key", metavar="<key>", type=str, help="5386256044:AAHdOT4AE15JDfFMhnNiJDq3jmRh_X_7gso")
         mutually_exclusive_group.add_argument("-f", "--use_file", dest="use_file", metavar="<path>", type=Utils.path_type, help="File path for Telegram bot and YouTube api key")
 
         # Get arguments
